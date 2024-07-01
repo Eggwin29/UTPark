@@ -1,0 +1,91 @@
+ion-content {
+    position: relative;
+    --background: none; // Remove the background here
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; // Ensure the content takes the full height of the viewport
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 7, 12, 0.50)), url('../../assets/backgrounds/login_background.png') no-repeat center / cover;
+      filter: blur(5px); // Adjust the blur amount as needed
+      z-index: -1; // Ensure the background stays behind the content
+    }
+  }
+  
+  .wrapped {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .login-card {
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%; // Ensure the card is responsive
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.1); // Set to semi-transparent white
+    border-radius: 10px;
+    backdrop-filter: blur(10px); // Optional: Adds a blur effect to the background
+    margin-bottom: 10em;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+    color: #fff; // Adjusted to stand out against the transparent background
+    margin-bottom: 1.5rem;
+  }
+  
+  ion-list {
+    background: none;
+  }
+  
+  ion-item {
+    --highlight-color-focused: #3880ff;
+    --min-height: 50px;
+    --border-radius: 10px;
+    margin-bottom: 1rem;
+    //background: rgba(255, 255, 255, 0.3); // Set a semi-transparent background for the input items
+  }
+  
+  ion-input {
+    --padding-start: 15px;
+    //color: #fff; // Adjusted to stand out against the transparent background
+  }
+  
+  ion-icon {
+    color: #fff; // Adjusted to stand out against the transparent background
+  }
+  
+  ion-button {
+    margin-top: 1rem;
+    --border-radius: 10px;
+    --background: #3880ff;
+    --background-activated: #3171e0;
+    --background-focused: #4c8dff;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .login-card {
+      margin-bottom: 0;
+    }
+  
+    ion-content {
+    
+      &::before {
+        background: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 7, 12, 0.50)), url('../../assets/backgrounds/login_desk_back.jpg') no-repeat center / cover;
+        filter: none;
+      }
+    }
+  
+  
+  
+  }
