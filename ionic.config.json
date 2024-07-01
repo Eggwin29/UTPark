@@ -1,0 +1,7 @@
+{
+  "name": "UTParkv1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
