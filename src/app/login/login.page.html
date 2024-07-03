@@ -5,7 +5,7 @@
     <ion-card class="ion-text-center login-card ion-padding">
       <form>
         
-        <h1>Iniciar sesión\</h1>
+        <h1>Iniciar sesión</h1>
   
         <ion-list>
           <ion-item>
@@ -21,8 +21,8 @@
           </ion-item>
         </ion-list>
   
-        <ion-button expand="block" type="submit" color="utcj">Iniciar sesión</ion-button>
-        <ion-button expand="block" fill="outline" color="white" type="submit">Volver al inicio</ion-button>
+        <ion-button button [routerLink]="['/main']" expand="block" type="submit" color="utcj">Iniciar sesión</ion-button>
+        <ion-button button [routerLink]="['/welcome']" expand="block" fill="outline" color="white" type="submit">Volver al inicio</ion-button>
       </form>
     </ion-card>
 

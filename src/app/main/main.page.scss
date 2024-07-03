@@ -1,0 +1,53 @@
+h1, h2 {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.wrapped {
+  display: grid;
+  grid-template-rows: 140px 90px 1fr;
+  grid-template-areas: 
+    "title"
+    "info"
+    "map";
+  height: 100%;
+}
+
+.title {
+  background-color: rgb(55, 0, 255);
+  grid-area: title;
+}
+
+.info {
+  background-color: yellow;
+  grid-area: info;
+  padding: 0.5em;
+}
+
+.map {
+  background: red;
+  padding: 1em;
+  grid-area: map;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map img {
+  height: auto;
+  width: 100%;
+  max-height: 500px;
+  max-width: 850px;
+  //object-fit: contain; /* Mantener la proporción de la imagen */
+  aspect-ratio: 14 / 9; /* Mantener una proporción fija, puedes ajustar según necesites */
+}
+
+@media screen and (min-width: 600px) {
+  ion-content {
+    --background: blue;
+  }
+}

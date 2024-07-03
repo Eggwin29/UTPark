@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'singin',
     loadChildren: () => import('./singin/singin.module').then( m => m.SinginPageModule)
   },
+  {
+    path: 'main',
+    loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
+  },
 ];
 
 @NgModule({
