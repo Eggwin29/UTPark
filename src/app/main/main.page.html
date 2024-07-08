@@ -3,44 +3,54 @@
     <ion-buttons slot="start">
       <ion-menu-button menu="m1"></ion-menu-button>
     </ion-buttons>
-    <ion-title>Main</ion-title>
+    <ion-title>Home</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding ion-text-center">
-
-
   <div class="wrapped">
-
     <div class="title">
       <ion-text color="utcj">
         <h1 class="ion-text-bold">UT <span style="color: black;">Park</span></h1>
       </ion-text>
-      <h2>---------------------- <ion-icon name="car"></ion-icon></h2>
+
+      <div class="separator">
+        <div class="line"></div>
+        <h2><ion-icon name="car"></ion-icon></h2>
+      </div>
     </div>
-  
-    
-      <div class="info">
 
-        <form>
-          <ion-list>
-            <ion-item>
-              <ion-input label="Correo electrónico" label-placement="floating" placeholder="Ingrese su correo">
-                <ion-icon slot="end" fill="clear" color="medium" name="mail"></ion-icon>
-              </ion-input>
-            </ion-item>
-          </ion-list>
-        </form>
-        
-      </div>
+    <div class="info">
+      <h3>Mapa del estacionamiento</h3>
+    </div>
 
-      <div class="map">
-        <img src="../../assets/images/map.jfif" alt="Mapa de ejemplo">
-      </div>
-    
+    <div class="form">
+      <h1>Here goes the form</h1>
+      <ion-list>
+        <ion-item>
+          <ion-input label="Default solid input" label-placement="floating" fill="solid" placeholder="Enter text"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input label="Solid input with placeholder" label-placement="floating" fill="solid" placeholder="Enter company name"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input label="Solid input with value" label-placement="floating" fill="solid" value="121 S Pinckney St #300"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input label="Readonly solid input" label-placement="floating" fill="solid" value="Madison" [readonly]="true"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-input label="Disabled solid input" label-placement="floating" fill="solid" value="53703" [disabled]="true"></ion-input>
+        </ion-item>
+      </ion-list>
+    </div>
 
+    <div class="map">
+      <img src="../../assets/images/map.jfif" alt="Mapa de ejemplo">
+    </div>
   </div>
-
-
-  
 </ion-content>

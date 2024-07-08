@@ -1,40 +1,81 @@
+
 h1, h2 {
   font-size: 50px;
   font-weight: bolder;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 35px;
+}
+
+.separator {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  border: none !important;
+  border-top: 6px dashed #000 !important;
+  color: #fff !important;
+  background-color: #fff !important;
+  height: 3px !important;
+  width: 95% !important;
+  display: block !important;
+  font-size: initial !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  margin-right: 10px;
 }
 
 .wrapped {
   display: grid;
-  grid-template-rows: 140px 90px 1fr;
+  grid-template-rows: 140px 70px 1fr;
   grid-template-areas: 
     "title"
     "info"
     "map";
-  height: 100%;
 }
 
 .title {
-  background-color: rgb(55, 0, 255);
   grid-area: title;
 }
 
 .info {
-  background-color: yellow;
   grid-area: info;
   padding: 0.5em;
+  margin-bottom: 1em;
+  background-color: rgb(0, 97, 8);
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info h3 {
+  font-weight: bolder;
+  margin-bottom: 0.5em;
+  color: white;
+}
+
+.form {
+  grid-area: form;
+  display: none;
+}
+
+hr {
+  color: red;
 }
 
 .map {
-  background: red;
+  background-color: rgba(223, 223, 223, 0.377);
   padding: 1em;
   grid-area: map;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .map img {
@@ -42,12 +83,35 @@ h2 {
   width: 100%;
   max-height: 500px;
   max-width: 850px;
-  //object-fit: contain; /* Mantener la proporción de la imagen */
-  aspect-ratio: 14 / 9; /* Mantener una proporción fija, puedes ajustar según necesites */
+  aspect-ratio: 14 / 9;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   ion-content {
-    --background: blue;
+    --overflow: hidden;
+  }
+
+  .form {
+    display: block;
+  }
+
+  .wrapped {
+    grid-template-rows: 140px 70px 1fr;
+    grid-template-areas: 
+      "title title"
+      "info info"
+      "form map";
+    display: grid;
+    grid-template-columns: 57% 43%;
+  }
+
+  .form {
+    grid-column: 1 / 2;
+    padding-right: 1em;
+  }
+
+  .map {
+    grid-column: 2 / 3;
+    padding-left: 1em;
   }
 }

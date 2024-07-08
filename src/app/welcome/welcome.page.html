@@ -1,30 +1,37 @@
 <ion-header [translucent]="true">
 </ion-header>
 
-<ion-content class="background ion-padding" fullscreen>
-  <div class="welcome-container">
-    <ion-img src="../../assets/logo/logo.png" alt="Logo"></ion-img>
+<ion-content class="background " fullscreen>
 
-    <p>Bienvenido a la casa de los toros bravos</p>
+  <div class="wrapped">
 
-    <div class="buttons ion-content-center">
-      <ion-button button [routerLink]="['/singin']" expand="block" class="ion-margin-top" color="utcj">Registrarse</ion-button>
-      <ion-button button [routerLink]="['/login']" expand="block" class="ion-margin-top" fill="outline" color="white">Iniciar sesión</ion-button>
+    <div class="greetings">
+      <h1 style="color: white;">Hola</h1>
     </div>
 
-    <p>
-      ¿Ya conoces nuestras redes sociales? <a href="#">Exploralas</a>
-    </p>
-
-    <div class="social-media">
-      <ion-icon name="logo-facebook"></ion-icon>
-      <ion-icon name="logo-twitter"></ion-icon>
-      <ion-icon name="logo-youtube"></ion-icon>
-      <ion-icon name="logo-instagram"></ion-icon>
+    <div class="welcome-container">
+      <ion-img src="../../assets/logo/logo.png" alt="Logo"></ion-img>
+  
+      <p>Bienvenido a la casa de los toros bravos</p>
+  
+      <div class="buttons ion-content-center">
+        <ion-button button [routerLink]="['/singin']" expand="block" class="ion-margin-top" color="utcj">Registrarse</ion-button>
+        <ion-button button [routerLink]="['/login']" expand="block" class="ion-margin-top ion-hide-lg-up" fill="outline" color="white">Iniciar sesión</ion-button>
+        <ion-button button [routerLink]="['/login']" expand="block" class="ion-margin-top ion-hide-lg-down" fill="outline" color="black">Iniciar sesión</ion-button>
+      </div>
+  
+      <p>
+        ¿Ya conoces nuestras redes sociales? <a href="#">Exploralas</a>
+      </p>
+  
+      <div class="social-media">
+        <ion-icon name="logo-facebook"></ion-icon>
+        <ion-icon name="logo-twitter"></ion-icon>
+        <ion-icon name="logo-youtube"></ion-icon>
+        <ion-icon name="logo-instagram"></ion-icon>
+      </div>
     </div>
+
   </div>
+
 </ion-content>
-
-
-
-
