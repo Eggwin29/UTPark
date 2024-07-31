@@ -6,6 +6,11 @@ describe('MainPage', () => {
   let fixture: ComponentFixture<MainPage>;
 
   beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [MainPage],
+      // Agrega otras dependencias necesarias aquí
+    }).compileComponents();
+
     fixture = TestBed.createComponent(MainPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -14,4 +19,6 @@ describe('MainPage', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // Agrega pruebas adicionales si es necesario
 });

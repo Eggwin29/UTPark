@@ -1,0 +1,22 @@
+LocalStorage
+
+
+*Plugin SQlite MongoDB Regi
+
+npm install @ionic/storage 	
+npm install @ionic/storage-angular
+
+*Configuracion
+app.module.ts
+
+Metodos referemncia al CRUD Basico
+
+Insercion en LocalStorage --- SetItem('Clave', 'Valor)
+
+Obtener los datos --- getItem('clave')
+
+Eliminar un elemento ----- removeItem('clave')
+
+Elemento en Local --- length
+
+Acceso a una clave ----- key(index)

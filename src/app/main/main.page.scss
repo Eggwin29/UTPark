@@ -8,6 +8,7 @@ h2 {
   font-size: 35px;
 }
 
+
 .separator {
   display: flex;
   flex-direction: row;
@@ -85,6 +86,65 @@ hr {
   max-width: 850px;
   aspect-ratio: 14 / 9;
 }
+
+ion-card {
+  max-width: 400px; /* Ajusta el ancho máximo para que se asemeje a una tarjeta estudiantil */
+  margin: 0 auto; /* Centra el card horizontalmente */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Sombra para dar un efecto de profundidad */
+  border: 1px solid #ccc; /* Borde sutil alrededor del card */
+  padding: 0;
+}
+
+ion-card-header {
+  padding: 1em;
+  background-color: #f8f9fa; /* Fondo claro para el header */
+  border-bottom: 1px solid #ddd; /* Borde inferior sutil */
+}
+
+.student-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Imagen redonda */
+  object-fit: cover; /* Asegura que la imagen se ajuste sin distorsión */
+  border: 2px solid #000000; /* Borde azul para la foto */
+  margin-right: 1em; /* Espacio entre la foto y el nombre */
+}
+
+.student-details {
+  text-align: left;
+}
+
+ion-card-title {
+  font-size: 1.2em; /* Tamaño de fuente para el título */
+  font-weight: bold;
+}
+
+ion-card-subtitle {
+  font-size: 1em; /* Tamaño de fuente para el subtítulo */
+  color: #555; /* Color de texto para el subtítulo */
+}
+
+ion-card-content {
+  padding: 1em;
+}
+
+ion-card-content p {
+  margin: 0.5em 0;
+  font-size: 0.9em; /* Tamaño de fuente para los detalles */
+}
+
+ion-card-content strong {
+  font-weight: bold; /* Negrita para las etiquetas */
+}
+
+
 
 @media screen and (min-width: 1000px) {
   ion-content {
